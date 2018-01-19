@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="portfolio.css">
+	<style>
+	/* Navigation Bar */
+		nav li {
+			float: left;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+
+			/* fixes navigation bar to the top 
+			position: fixed;
+			top: 0;
+			width: 100%; */
+		}
+		nav li {
+			float: left;
+		}
+		nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		/* change the link color to #111 (black) on hover */
+		nav li a:hover {
+			background-color: #111;
+		}
+		/* lets the user knnow which page they are on */
+		nav .active {
+			background-color: #4CAF50;
+		}
+		
+
+	</style>
 <title>Marissa's Web Server</title>
 </head>
 <body>
 
-<h1>About</h1>
-<p>Hi, my name is Marissa Hastings. I'm a junior in statistics at BYU with a computer science minor.</p>
-
-<h2>Projects</h2>
+<nav>
 <ul>
-	<li>Created a pig latin translator</li> 
-	<li>Created a very basic RPG game</li>
-	<li>Created a personal web page</li>
+	<li><a href="/index.html">Home</a></li>
+	<li><a href="/projects.html">Projects</a></li>
+	<li><a href="/experience.html">Experience</a></li>
+	<li><a href="/contact.html">Contact</a></li>
 </ul>
+</nav>
 
-<h2>Experience</h2>
-<ul>
-	<li>CS Intern at Cicero BPO (May 2016 - August 2016)</li>
-	<li>Skyroom Buffet Worker (October 2016 - December 2016)</li>
-	<li>Statistician at Legally Mine (October 2016 - Present)</li>
-</ul>
+<section>
+   <aside>
+      <h2>Marissa Hastings</h2>
+   </aside>
+   <article>
+      <h1>About</h1>
+		<p>Hi, my name is Marissa Hastings. I'm a junior in statistics at BYU with a computer science minor.</p>
+   </article>
+</section>
 
-<h2><a href="/contact.html">Contact Page</a></h2>
+
 
 </body>
 </html>
